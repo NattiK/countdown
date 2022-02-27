@@ -1,0 +1,79 @@
+@font-face {
+    font-family: alarm-clock;
+    src: url("../fonts/alarm-clock.ttf");
+}
+body {
+    overflow: hidden;
+    background-color: rgb(10, 5, 34);
+}
+.time-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.continer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.time div {
+    font-family: alarm-clock;
+    font-size: 100px;
+    color: white;
+    text-shadow: 0px 0px 15px rgb(73, 157, 253);
+}
+.hours::after{
+    content: ':';
+}
+.minutes::after{
+    content: ':';
+}
+.arow{
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.452);
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
+}
+.arow:hover{
+    background-color: rgba(240, 248, 255, 0.13);
+    color: white;
+}
+.arow:active{
+    background-color: rgba(240, 248, 255, 0.233);
+}
+
+.buttonFunctins button{
+    background :transparent;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.404);
+    margin: 30px;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 100;
+    border-radius: 5px;
+    height: 40px;
+    text-shadow: 0px 0px 9px rgba(175, 207, 255, 0.589);
+    width: 100px;
+}
+.buttonFunctins button:hover{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.068);
+}
+
+.buttonFunctins button:active{
+    background-color: rgba(255, 255, 255, 0.116);
+}
