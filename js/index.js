@@ -55,8 +55,6 @@ document.querySelector("#start").addEventListener("click", () => {
         time.getSeconds() == 0
       ) {
         clearInterval(startTimer);
-        let audio = new Audio("../audio/beep.mp3");
-        audio.play(gtrgt);
         clicked = false;
       } else {
         time.setSeconds(time.getSeconds() - 1);
